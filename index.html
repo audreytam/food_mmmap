@@ -21,37 +21,51 @@
       display: flex;
       justify-content: center;
     }
+    .map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 90vw;
+    max-width: 1000px;
+    aspect-ratio: 4 / 3;
+    border: 0;
+  }
+
+  @media (max-width: 600px) {
     iframe {
-      border: none;
-      width: 100%;
-      max-width: 960px;
-      height: 600px;
+      width: 90vw;
+      aspect-ratio: 9 / 16; /* Taller and narrower for phones */
     }
+  }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Berkeley-Area Food Access, Mapped</h1>
+    <h1>Berkeley-Area Food Access, mapped</h1>
     <h2 style="font-weight: normal; font-size: 1.2em; margin-top: 0.5em;">
  	Created by students for students
     </h2>
   </header>
 
   <main>
-    <div style="text-align: center; margin-top: 10px;">
+  <div style="display: flex; flex-direction: column; align-items: center; margin: 40px 0;">
   <iframe 
     src="https://www.google.com/maps/d/embed?mid=1qJCzvO7skSJUIwFaqr-Dk197wjzdWzM&ehbc=2E312F" 
-    width="640" 
-    height="480">
+    width="100%" 
+    height="600"
+    style="max-width: 1000px; min-width: 300px; width: 90vw; border: none; aspect-ratio: 4 / 3;">
   </iframe>
-  <div style="margin-top: 10px;">
-    <a href="https://www.google.com/maps/d/edit?mid=1qJCzvO7skSJUIwFaqr-Dk197wjzdWzM&usp=sharing" target="_blank">
-      <u>Save me to Google Maps!</u>
-    </a>
-  </div>
+  <a 
+    href="https://www.google.com/maps/d/edit?mid=1qJCzvO7skSJUIwFaqr-Dk197wjzdWzM&usp=sharing" 
+    target="_blank" 
+    style="margin-top: 12px; font-weight: bold; text-decoration: underline; color: #0066cc;">
+    Save me to Google Maps!
+  </a>
 </div>
-
   </main>
 
   <footer>
