@@ -27,6 +27,16 @@
     align-items: center;
   }
 
+  .tip {
+  background-color: #ffffff;
+  color: #333;
+  padding: 15px 20px;
+  font-size: 1em;
+  max-width: 800px;
+  margin: 40px auto; /* creates spacing above and below */
+  text-align: center;
+}
+
   iframe {
     width: 90vw;
     max-width: 1000px;
@@ -46,16 +56,16 @@
 
   <header>
     <h1>Berkeley-Area Food Access, mapped</h1>
-    <h2 style="font-weight: normal; font-size: 1.2em; margin-top: 0.5em;">
+    <h2 style="font-weight: normal; font-size: 1.3em; margin-top: 0.5em;">
  	Created by students for students
     </h2>
-    <p class="tip">
-      Tip: Click the icon on the top left corner to access map layers, and expand the first section for an overview with details.
-    </p>
   </header>
 
   <main>
   <div style="display: flex; flex-direction: column; align-items: center; margin: 40px 0;">
+    <div class="tip">
+      <strong>Tip:</strong> Click the top left corner icon to access map layers, and expand the first section for annotated legend :)
+    </div>  
   <iframe 
     src="https://www.google.com/maps/d/embed?mid=1qJCzvO7skSJUIwFaqr-Dk197wjzdWzM&ehbc=2E312F" 
     width="100%" 
